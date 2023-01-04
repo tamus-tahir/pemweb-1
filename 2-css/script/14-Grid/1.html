@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .grid div:nth-child(even) {
+            background: red;
+        }
+
+        .grid div:nth-child(odd) {
+            background: blue;
+        }
+
+        /*	
+			value px/%/fr
+			2 column value 1fr 1fr
+			3 column value 1fr 1fr 1fr
+			jika ingin kolom lainya lebih besar beri value 2fr or >
+			grid-column-gap ==> jarak antara kolom
+			grid-row-gap ==> jarak antara baris
+			grid-gap ==> jarak antara baris dan kolom
+			grid-auto-rows: minmax(value, value) ==> mengatur lebar otomatis
+		*/
+        .grid {
+            display: grid;
+            /*grid-template-columns: 1fr 2fr 1fr;*/
+            /*grid-column-gap: 10px;*/
+            /*grid-row-gap: 10px;*/
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1em;
+            grid-auto-rows: minmax(100px, auto);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita veritatis blanditiis cum, cumque
+            voluptates velit, distinctio ab quidem cupiditate at!</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, cupiditate?</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="selectID"></div>
+
+	<div class="selectClass"></div>
+	<div class="selectClass"></div>
+	<div class="selectClass"></div>
+
+	<div class="selectClassAll"></div>
+	<div class="selectClassAll"></div>
+
+
+	<h1>Pemograman Web</h1>
+
+	<script type="text/javascript">
+		/*
+			DOM(Document Object Model) adalah model data standar. DOM adalah cara javascript melihat suatu halaman html. 
+			DOM adalah sebuah platform dan interface yang memperbolehkan pengaksesan dan perubahan pada konten, struktur, 
+			dan style pada sebuah dokumen oleh program dan  script. 
+			Istilah HTML DOM mengacu kepada dokumen html. Kasusnya disini ialah konten, struktur, 
+			dan style pada dokumen html dapat diakses dan dirubah dengan menggunakan sintaks javascript.
+		*/
+
+		/*
+			dengan DOM kita dapat melakukan, diantaranya sebagai berikut :
+			Javascript dapat merubah setiap elemen HTML pada halaman web.
+			Javascript dapat merubah setiap atribut HTML pada halaman web.
+			Javascript dapat merubah setiap style CSS pada halaman web.
+			Javascript dapat menghilangkan elemen dan atribut HTML yang ada.
+			Javascript dapat menambahkan elemen dan atribut HTML baru.
+			Javascript dapat bereaksi pada setiap event yang ada pada halaman web.
+			Javascript dapat membuat event baru pada halaman web.
+		*/
+
+		// select id
+		// pada document cari element yang idnya selectID kemudian cetak html Patria Artha
+		// innerHTML mempunyai 2 fungsi yaitu memperoleh atau merubah isi konten
+		document.getElementById('selectID').innerHTML = "Patria Artha"
+
+		// select class
+		// untuk class kita harus menulis index karena class biasanya lebih dari 1
+		document.getElementsByClassName('selectClass')[0].innerHTML = "Teknik Informatika"
+		document.getElementsByClassName('selectClass')[1].innerHTML = "Teknik Mesin"
+		document.getElementsByClassName('selectClass')[2].innerHTML = "Teknik Elektro"
+
+		// kita tidak perlu menulis indexnya jika ingin merubah semua class tersebut
+		document.getElementsByClassName('selectClassAll').innerHTML = "Tamus Tahir"
+
+		// select tag
+		document.getElementsByTagName('h1')[0].innerHTML = "Web Programming"
+	</script>
+</body>
+
+</html>

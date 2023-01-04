@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+
+	<table border="1" cellpadding="10" cellspacing="0">
+		<thead>
+			<tr>
+				<th>No</th>
+				<th>Nama</th>
+				<th>NIM</th>
+				<th>Prodi</th>
+			</tr>
+		</thead>
+		<tbody id="tbody">
+
+		</tbody>
+	</table>
+
+	<ol id="ol">
+
+	</ol>
+
+	<script type="text/javascript">
+		let mahasiswa = [
+			["Awal", "2018", "Informatika"],
+			["Marlin", "2017", "Mesin"],
+			["Andi", "2019", "Elektro"],
+			["Alwi", "1028", "Arsitek"]
+		];
+
+		let row = [];
+
+		// for (i = 0; i < mahasiswa.length; i++) {
+		// 	row += '<tr>'
+		// 	row += '<td>' + (i + 1) + '</td>'
+		// 	row += '<td>' + mahasiswa[i][0] + '</td>'
+		// 	row += '<td>' + mahasiswa[i][1] + '</td>'
+		// 	row += '<td>' + mahasiswa[i][2] + '</td>'
+		// }
+
+		// for (i = 0; i < mahasiswa.length; i++) {
+		// 	row += `
+		// 			<tr>
+		// 				<td>${i + 1}</td>
+		// 				<td>${mahasiswa[i][0]}</td>
+		// 				<td>${mahasiswa[i][1]}</td>
+		// 				<td>${mahasiswa[i][2]}</td>
+		// 			</tr>
+		// 		`
+		// }
+
+		let i = 1;
+		mahasiswa.forEach(m => row +=
+			`
+				<tr>
+					<td>${i++}</td>
+					<td>${m[0]}</td>
+					<td>${m[1]}</td>
+					<td>${m[2]}</td>
+				</tr>
+			`
+		);
+
+		document.getElementById('tbody').innerHTML = row;
+
+
+	</script>
+</body>
+
+</html>

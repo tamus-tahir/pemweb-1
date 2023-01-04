@@ -1,0 +1,50 @@
+h1 {
+	/*merubah warna teks dengan nama warna*/
+	color: red;
+	/*membuat teks menjadi rata kiri*/
+	text-align: left;
+	/*membuat garis di atas teks*/
+	text-decoration: overline;
+	/*merubah teks mendaji huruf besar*/
+	text-transform: uppercase;
+	/*mengatur jarak antar huruf*/
+	letter-spacing: 20px;
+}
+
+h2 {
+	/*merubah warna teks dengan kode hexa warna*/
+	color: #ff0000;
+	/*membuat teks menjadi rata kanan*/
+	text-align: right;
+	/*membuat garis di tengah teks*/
+	text-decoration: line-through;
+	/*merubah teks mendaji huruf kecil*/
+	text-transform: lowercase;
+	/*mengatur jarak antar kata*/
+	word-spacing: 50px;
+}
+
+h3 {
+	/*merubah warna teks dengan kode rgb warna*/
+	color: rgb(255, 0, 0);
+	/*membuat teks menjadi rata tengah*/
+	text-align: center;
+	/*membuat garis di bawah teks*/
+	text-decoration: underline;
+}
+
+p {
+	/*membuat teks menjadi rata kiri kanan*/
+	text-align: justify;
+	/*membuat awalan huruf menjadi huruf besar pada teks*/
+	text-transform: capitalize;
+	/*membuat jarak pada teks, biasa digunakan pada paragraf*/
+	text-indent: 50px;
+	/*mengatur jarak antara baris pada teks*/
+	line-height: 50px;
+}
+
+a {
+	/*menghilangkan garis bawah pada teks link */
+	text-decoration: none;
+}

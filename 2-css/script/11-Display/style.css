@@ -1,0 +1,35 @@
+/*
+			setiap tag html memeiliki default value display yaitu inline atau block
+			display: inline, block, inline-block, none
+		*/
+
+/*
+			inline:
+			- secara default tidak menambah baris baru
+			- height dan width sesuai konten
+			- kita tidak bisa merubah height dan width, kecuali elemen img
+			- supaya dapat mengatur height dan width, jika kita ubah displaynya menjadi inline block
+		*/
+a {
+	background-color: grey;
+	height: 1000px;
+}
+
+/*
+			block:
+			- secara default menambah baris baru
+			- secara default width akan mengikuti width browser
+			- kitadapat mengatur height dan width
+		*/
+ul {
+	background-color: grey;
+	height: 100px;
+}
+
+/*
+			none digunakan untuk menghilangkan sebuah elemen
+		*/
+
+h1 {
+	display: none;
+}

@@ -1,0 +1,26 @@
+/* selector elemen html*/
+body {
+    background-color: grey;
+}
+
+/* tanda (,) diartikan dan, jadi tag h1 dan tag h2 */
+h1,
+h2 {
+    color: maroon;
+}
+
+/* jika menggunakan spasi diartikan tag i yang ada di dalam tag h1 */
+h1 i {
+    color: rgb(60, 0, 128);
+}
+
+
+/* selector class */
+.tag-h3 {
+    color: aqua;
+}
+
+/* selector id */
+#tag-p {
+    color: burlywood;
+}

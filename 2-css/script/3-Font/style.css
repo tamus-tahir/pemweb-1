@@ -1,0 +1,43 @@
+h1 {
+    /* merubah jenis font */
+    font-family: arial;
+    /* merubah ukuran font dalam satuan pixel */
+    font-size: 16px;
+    /* mengganti jenis font ke font italic */
+    font-style: italic;
+    /* merubah font dari tebal menjadi normal */
+    font-weight: normal;
+}
+
+h2 {
+    /* merubah jenis font, jika ditulis lebih dari satu
+	font yang dipilih oleh browser adalah jenis font pertama
+	jika tidak ditemukan browser akan memilih font kedua */
+    font-family: verdana, comic sans ms, arial;
+    /* merubah font menjadi small capital */
+    font-variant: small-caps;
+    /* merubah ukuran font dalam satuan em */
+    font-size: 1em;
+    /* merubah font jadi miring */
+    font-style: oblique;
+}
+
+h3 {
+    /* embed from google font */
+    font-family: 'Fira Code', monospace;
+}
+
+/* embed from local font */
+@font-face {
+    font-family: 'Font-Acme';
+    src: url('Acme-Regular.ttf') format('truetype');
+}
+
+p {
+    /* merubah ukuran font dalam satuan % */
+    font-size: 100%;
+    /* merubah font menjadi tebal */
+    font-weight: bold;
+    /* pemanggilan local font */
+    font-family: 'Font-Acme';
+}

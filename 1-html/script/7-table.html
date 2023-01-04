@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- membuat tabel -->
+    <!-- 
+		border = membuat bingkai pada tabel atau garis
+		cellspacing = membuat garis pada tiap data disarankan nilainya 0
+		cellpadding = mengatur jarak antara data dan border
+	-->
+	<table border="2" cellspacing="0" cellpadding="10">
+        <thead>
+		    <!-- tr adalah tabel row berfungsi membuat baris pada tabel -->
+            <tr>
+                <!-- th = tabel header untuk membuat tulisan otomatis tebal  -->
+                <th>row 1 column 1</th>
+                <th>row 1 column 2</th>
+                <th>row 1 column 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- td adalah tabel data berfungsi membuat data dan membuat colum pada tabel -->
+                <!-- rowspan digunakan untuk menggabukan baris -->
+                <td rowspan="3">gabung baris</td>
+                <td>row 2 column 2</td>
+                <td>row 2 column 3</td>
+            </tr>
+            <tr>
+                <!-- colspan digunakan untuk mengabungkan kolom -->
+                <td colspan="3">gabung kolom</td>
+            </tr>
+        </tbody>
+        <tfoot>
+			<tr>
+				<td>row 4 column 1</td>
+				<td>row 4 column 2</td>
+				<td>row 4 column 3</td>
+			</tr>
+		</tfoot>
+	</table>
+
+</body>
+</html>

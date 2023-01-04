@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<!-- 
+		Internal css (not recomended)
+        Internal CSS adalah penulisan sintax css pada halaman html, ditulis di dalam tag head dengan membuat tag style. Cara ini juga tidak dianjurkan sama seperti inline css, hanya saja cara ini tidak memberatkan halaman website. 
+    -->
+	<style>
+		p {
+			font-size: 25px;
+		}
+	</style>
+
+	<!-- 
+		Eksternal css (recomended) 
+        Eksternal CSS adalah penulisan sintax css pada halaman berbeda dari halaman html. Kita membuat file baru dengan ekstensi .css. Kemudian kita hubungkan halaman css dengan halaman html yaitu dengan menambahkan link pada rag head html. Cara ini sangat direkomendasikan karna kita memisahkan halaman style dengan halaman html, sehingga html kita akan terlihat lebih bersih dan rapi. 
+    -->
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<!-- inline css (not recomended) -->
+	<!-- 
+        Inline CSS adalah penulisan sintax css pada halaman html di dalam tag. Cara ini tidak dianjurkan karena kita menggabungkan style dengan konten. Seperti kita ketahui bahwa css digunakan untuk memisahkan style dengan konten. Inline css juga akan memberatkan website kita, sehingga akan menambah waktu load halaman website 
+    -->
+	<p style="color: blue;">UNITAMA</p>
+</body>
+
+</html>

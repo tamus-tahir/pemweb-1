@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            height: 2000px;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            color: white;
+        }
+
+        /* 
+			fixed = posisi defaultnya menjadi kosong dan elemennya bergesar 1 tingkat ke depan
+					posisi fixed akan membuat elemen tidak ikut bergerak ketika di scroll 
+		*/
+
+        .a {
+            background-color: red;
+        }
+
+        .b {
+            background-color: green;
+            position: fixed;
+            top: 30px;
+            left: 30px;
+        }
+
+        .c {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">1</div>
+    <div class="b">2</div>
+    <div class="c">3</div>
+</body>
+
+</html>

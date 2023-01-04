@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+		<!-- 
+            penggunaan for dan id untuk menghubungkan label dan input
+            pada saat kita klik label kursor diarahkan ke input sesuai dengan id nya
+            lebh detail tentang id ==> nanti dibahas di css/js
+            placeholder untuk memberi teks petunjuk
+            readonly hanya bisa dibaca
+            value memberi nilai
+        -->
+        <label for="nama">Nama :</label>
+        <input type="text" id="nama" placeholder="Masukan Nama Anda">
+        <hr>
+
+        <label for="nama">Readonly :</label>
+        <input type="text" id="nama" readonly value="Hanya Bisa Dibaca">
+        <hr>
+
+        <!-- 
+            min ==> nilai minimum input 
+            max ==> nilai maximum input 
+        -->
+		<label for="number">Number :</label>
+		<input type="number" id="number" min="5" max="10">
+
+        <!-- nilai name harus sama, digunkan agar pilihan tidak boleh lebih dari satu -->
+        <label>Jenis Kelamin :</label>
+        <input type="radio" name="gender">Pria
+        <input type="radio" name="gender">Wanita 
+        <hr>
+
+        <!-- digunakan untuk single choice berbentuk dropdown -->
+		<label>Pilih :</label>
+		<select>
+			<option>Pilihan Pertama</option>
+			<option>Pilihan Kedua</option>
+			<option>Pilihan Ketiga</option>
+		</select>
+        <hr>
+
+        <!-- input akan divalidasi sesuai dengan penulisan email -->
+		<label for="email">Email :</label>
+		<input type="email" id="email">
+        <hr>
+
+        <!-- input akan divalidasi sesuai dengan penulisan url -->
+		<!-- tiap browser berbeda -->
+		<label for="url">Url :</label>
+		<input type="url" id="url">
+        <hr>
+
+        <!-- untuk memunculkan nilai diperlukan css dan javascript -->
+		<label for="range">Range :</label>
+		<input type="range" id="range">
+        <hr>
+
+        <!-- digunakan untuk multi choice -->
+		<label>Multi Choice :</label>
+		<input type="checkbox"> <label>Pilihan Pertama</label>
+		<input type="checkbox"> <label>Pilihan Kedua</label>
+		<input type="checkbox"> <label>Pilihan Ketiga</label>
+        <hr>
+
+        <!-- digukanan untuk input yang teksnya banyak -->
+		<label>Teks Area</label>
+		<textarea></textarea>
+        <hr>
+
+        <!-- reset menghapus semua input -->
+		<button type="reset">Hapus</button>
+
+		<!-- mengirim data dibutuhkan bahasa pemograman untuk mengelolanya -->
+		<button type="submit">Kirim</button>
+	</form>
+
+</body>
+</html>

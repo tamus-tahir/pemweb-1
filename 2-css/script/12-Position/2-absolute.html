@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            color: white;
+        }
+
+        /* 
+			absulote = posisi defaultnya menjadi kosong dan elemennya bergesar 1 tingkat ke depan
+					   posisi defaultnya akan ditempati oleh elemen setelahnya
+			agar posisi elemen tidak keluar dari elemen utamanya kita berikan position relative pada elemen utamanya
+		*/
+
+
+        .position {
+            width: 800px;
+            height: 800px;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        .a {
+            background-color: red;
+        }
+
+        .b {
+            background-color: green;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        .c {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="position">
+        <div class="a">1</div>
+        <div class="b">2</div>
+        <div class="c">3</div>
+    </div>
+</body>
+
+</html>

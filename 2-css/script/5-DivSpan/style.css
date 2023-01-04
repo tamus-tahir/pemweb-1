@@ -1,0 +1,11 @@
+/* div dan span tidak memiliki fungsi khusus dalam html */
+
+/* dalam css div digunakan untuk membuat group yang sifatx block atau group vertikal */
+div {
+    color: blue;
+}
+
+/* dalam css div digunakan untuk membuat group yang sifatx inline atau group horisontal */
+span {
+    color: red;
+}

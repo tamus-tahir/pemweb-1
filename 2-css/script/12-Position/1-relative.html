@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            color: white;
+        }
+
+        /* 
+			position digunakan untuk menggeser elemen tanpa menggeser elemen lainnya
+			valuenya :static/relative/absulote/fixed
+			default value: static
+			value non static dapat menggunakan selektor top bottom left right untuk mengatur posisi
+			relative = posisi defaultnya tetap ada tapi elemennya bergesar 1 tingkat ke depan
+		*/
+
+        .a {
+            background-color: red;
+        }
+
+        .b {
+            background-color: green;
+            position: relative;
+            top: 30px;
+            left: 30px;
+        }
+
+        .c {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">1</div>
+    <div class="b">2</div>
+    <div class="c">3</div>
+</body>
+
+</html>

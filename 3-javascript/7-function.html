@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+		// contoh pembuatan function / user function
+		// keyword function - nama functtion -(parameter)
+		function penjumlahan(x, y, z) {
+			// script function
+			return x + y + z;
+		}
+
+		// parsenint ==> mengubah string menjadi integer
+		// digunakan karena inputan dari prompt akan dianggap sebagai string
+		let x = parseInt(prompt('nilai p'));
+		let y = parseInt(prompt('nilai y'));
+		let z = parseInt(prompt('nilai z'));
+
+		let hasil = penjumlahan(x, y, z);
+
+		alert(hasil);
+
+		// contoh pemanggilan function
+		console.log(penjumlahan(1, 2, 3));
+	</script>
+</body>
+
+</html>

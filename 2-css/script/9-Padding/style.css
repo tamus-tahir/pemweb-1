@@ -1,0 +1,57 @@
+/*
+	padding
+	padding-top: px;
+	padding-bottom: px;
+	padding-right: px;
+	padding-left: px;
+*/
+/*	
+	untuk membuat ukuran sebaiknya diatur saja widthnya
+	agar heightx otomatis disesuaikan dengan konten
+*/
+.a {
+	background-color: red;
+	width: 200px;
+	height: 200px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+/* kita dapat menulis padding dengan satu value untuk semua sisi*/
+.b {
+	background-color: green;
+	width: 200px;
+	padding: 20px;
+}
+
+/*	jika ditulis padding dengan dua value maka
+value pertama adalah top dan bottom
+value kedua adalah left dan right*/
+.c {
+	background-color: blue;
+	width: 200px;
+	padding: 20px 20px;
+}
+
+/*	jika ditulis padding dengan tiga value maka
+value pertama adalah top dan bottom
+value kedua adalah left dan right
+value ketiga adalah bottom*/
+.d {
+	background-color: yellow;
+	width: 200px;
+	padding: 20px 20px 20px;
+}
+
+/*	jika ditulis padding dengan empat value maka
+value pertama adalah top 
+value kedua adalah right
+value ketiga adalah bottom
+value keempat adalah left*/
+.e {
+	background-color: purple;
+	width: 200px;
+	padding: 20px 20px 20px 20px;
+}

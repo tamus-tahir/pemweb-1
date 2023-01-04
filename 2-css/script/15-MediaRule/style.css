@@ -1,0 +1,19 @@
+/* 
+  mengatur css untuk layar dengan lebar maximum 
+  biasa digunakan untuk mengatur tampilan pada tablet maupun smartphone
+*/
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    color: blue;
+  }
+}
+
+/* 
+  mengatur css untuk layar dengan lebar minimum 
+*/
+@media only screen and (min-width: 800px) {
+  h1 {
+    color: rgb(145, 255, 0);
+  }
+}

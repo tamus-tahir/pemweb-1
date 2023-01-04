@@ -1,0 +1,32 @@
+/*
+			jika elemen positionya non static maka kita bisa menggunakan z-index
+			z-index digunakan untuk mengatur posisi elemen berada di depan dari elemen lain 
+			atau berada di belakang elemen lainnya tergantung dari value yang diberikan
+		*/
+div {
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	line-height: 200px;
+	color: white;
+	position: absolute;
+}
+
+.a {
+	background-color: red;
+	z-index: 1;
+}
+
+.b {
+	background-color: green;
+	top: 120px;
+	left: 120px;
+	z-index: 5;
+}
+
+.c {
+	background-color: blue;
+	top: 240px;
+	left: 240px;
+	z-index: 3;
+}
